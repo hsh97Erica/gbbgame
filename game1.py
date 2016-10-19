@@ -43,5 +43,8 @@ def game():
 		print(a,"의 승점은 ",a_point,"이고, ",b,"의 승점은 ",b_point,"으로 승리자는 ",b,"입니다.")
 	elif(a_point==b_point):
 		print(a,"의 승점은 ",a_point,"이고, ",b,"의 승점은 ",b_point,"으로 무승부입니다.")
-
+	re = input("게임을 다시 시작하겠습니까? (y : 1 / n: 0)")
+	re = int(re)
+	if(re==1):
+		game()
 game()
