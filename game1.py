@@ -7,7 +7,9 @@ def game():
 	a_point=0
 	b_point=0
 	print("가위바위보를 시작합니다.")
-	while(i<10):
+	q=input("플레이할 라운드수를 입력하십시오 : ")
+	q=int(q)
+	while(i<q):
 		c = input(a+"는 가위, 바위, 보중 하나를 입력하세요.(가위 : 1, 바위 : 2, 보 : 3)")
 		c =int(c)
 		d = random.randint(1, 3)
